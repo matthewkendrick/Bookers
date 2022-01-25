@@ -584,51 +584,18 @@ textarea,
 /*========================================================================== */
 /* END of Reset CSS */
 
-.top-page {
-  width: 100%;
-  margin-left: 30px;
-}
-
-.top-title {
-  font-size: 30px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.main-title {
-  width: 200px;
-  text-align: center;
-  height: fit-content;
+.important {
   font-size: 50px;
 }
 
-.sub-title {
-  margin: 21px 0;
+.top-page {
+  margin-left: 20px;
 }
 
-.top-text {
-  height: 20px;
-  margin-top: 10px;
+.top-page-text {
   margin-left: 50px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.sub-text {
-  padding-top: 5px;
-}
-
-.main-text {
-  width: 80px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.last-text {
-  height: 20px;
-  margin: 50px;
-}
 header {}
 
 nav {}

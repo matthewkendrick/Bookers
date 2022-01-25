@@ -1,2 +1,24 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<section>
+  <h1>Books</h1>
+  <div class="section-books">
+    <div class="title">
+      <h4>Title</h4>
+    </div>
+    <div class="body">
+      <h4>Body</h4>
+    </div>
+  </div>
+</section>
+<section>
+  <%= form_for(@new_book, url: '/books') do |f| %>
+    <h1>New Books</h1>
+    <div class="new-book-title">
+      <%= f.text_field :title %>
+    </div>
+    <div class="new-book-body">
+      <%= f.text_area :body %>
+      <%= f.submit 'Create a Book' %>
+    </div>
+  <% end %>
+</section>
+  

@@ -10,14 +10,16 @@
   </div>
 </section>
 <section>
-  <%= form_for(@new_book, url: '/books') do |f| %>
+  <%= form_with model: @list, method: :patch, local:true do |f| %>
     <h1>New Books</h1>
     <div class="new-book-title">
-      <%= f.text_field :title %>
+      <h4>Title</h4>
+        <%= f.text_field :title %>
     </div>
     <div class="new-book-body">
-      <%= f.text_area :body %>
-      <%= f.submit 'Create a Book' %>
+      <h4>Body</h4>
+        <%= f.text_area :body %>
+        <%= f.submit 'Create a Book' %>
     </div>
   <% end %>
 </section>

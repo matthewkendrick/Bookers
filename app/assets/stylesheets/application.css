@@ -596,7 +596,15 @@ textarea,
   margin-left: 50px;
 }
 
+section {
+  margin: 0 30px;
+}
+
 .section-books {
   display: flex;
   flex-wrap: wrap;
+}
+
+footer {
+  height: 50px;
 }

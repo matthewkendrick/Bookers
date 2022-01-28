@@ -1,7 +1,7 @@
 <%# 一覧画面 %>
 <% if flash[:notice] %>
   <div class="index-flash">
-    <div class="duccessfully">
+    <div class="successfully">
       <%= flash[:notice] %>
     </div>
   </div>
@@ -38,7 +38,7 @@
       <div id="error_explanation">
         <h2><%= @book.errors.count %>errors prohibited this product from being saved:</h2>
         <ul>
-          <% @book.errors.full_message.each do |message|%>
+          <% @book.errors.full_messages.each do |message| %>
             <li><%= message %></li> 
           <% end %>
         </ul>
@@ -52,7 +52,7 @@
         <h4>Body</h4>
         <%= f.text_area :body, class: 'book_body' %>
     </div>
-    <%= f.submit 'Create a Book' %>
+    <%= f.submit 'Create Book' %>
   <% end %>
 </section>
 

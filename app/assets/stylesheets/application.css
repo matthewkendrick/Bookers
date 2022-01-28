@@ -598,9 +598,6 @@ textarea,
 
 section {
   margin: 0 30px;
-  a:hover {
-    color:white, text-decoration:none;
-  }
 }
 
 th {
@@ -613,10 +610,6 @@ td {
   
 .section-books, .section-new-book {
   margin-top: 50px;
-}
-
-.button :hover {
-  background-color: black:
 }
 
 footer {

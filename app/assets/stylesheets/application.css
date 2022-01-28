@@ -598,11 +598,25 @@ textarea,
 
 section {
   margin: 0 30px;
+  a:hover {
+    color:white, text-decoration:none;
+  }
 }
 
-.section-books {
-  display: flex;
-  flex-wrap: wrap;
+th {
+  padding-bottom: 5px;
+}
+
+td {
+  padding: 0 5px 7px 5px;
+}
+  
+.section-books, .section-new-book {
+  margin-top: 50px;
+}
+
+.button :hover {
+  background-color: black:
 }
 
 footer {

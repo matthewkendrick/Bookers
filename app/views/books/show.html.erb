@@ -1,13 +1,14 @@
-
-<%= flash[:notice] %>
-
-<section>
-  <h2>タイトル</h2>
+<%# 詳細画面 %>
+<section class="section-detals">
+  <p><%= flash[:notice] %></p>
+  <h4>タイトル</h4>
   <p><%= @book.title %></p>
 
-  <h2>本文</h2>
+  <h4>本文</h4>
   <p><%= @book.body %></p>
+  <div class="button">
+    <%= link_to "Edit",  edit_book_path(@book) %> 
+    | 
+    <%= link_to "Back", books_path %>
+  </div>
 </section>
-
-<%= link_to "Edit", edit_book_path(@book) %>
-<%= link_to "back", books_path %>
